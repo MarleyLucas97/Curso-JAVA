@@ -2,8 +2,8 @@ public class Numero {
 
     private int numero;
 
-    public Numero(int numero){
-        this.numero=numero;
+    public Numero(){
+        this.numero=0;
     }
     public void setNumero(int numero){
         this.numero=numero;
