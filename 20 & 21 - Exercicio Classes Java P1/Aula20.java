@@ -9,11 +9,22 @@ public class Aula20{
         Vegetal20 Cenoura = new Vegetal20(5);
         Vegetal20 Alface = new Vegetal20(1);
 
+        System.out.printf("%n Aranha%n");
         Aranha.info();
-        Aranha.ataque(Formiga);
-        //Formiga.mover();
-        Aranha.info();
+        System.out.printf("%n Formiga%n");
+        Formiga.info();
+        System.out.printf("%n Sapo%n");
+        Sapo.info();
+        
 
-        //System.out.println(Formiga.getVivo());
+        Sapo.ataque(Formiga);  
+        Sapo.info();
+        Sapo.comer(Formiga);
+        Sapo.info();      
+        Aranha.ataque(Formiga);
+        Aranha.info();
+        Aranha.comer(Formiga);
+        Aranha.info();
+        Alface.info();
     }
 }

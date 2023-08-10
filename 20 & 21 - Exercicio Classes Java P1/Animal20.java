@@ -39,12 +39,18 @@ abstract class Animal20 implements Ser20{
     public int getMassa(){
         return this.massa;
     }
+    public void setVelocidade(int velocidade){
+        this.velocidade=velocidade;
+    }
+    public int getVelocidade(){
+        return this.velocidade;
+    }
 
     public void ataque(Animal20 a){
         if(this.vivo){
             if(this.forca > a.forca){
-                this.forca+=a.getMassa();
                 a.vivo=false;
+                System.out.println(this.getClass().toGenericString()+ " esta atacando...");
             }else{
                 this.vivo=false;
             }
@@ -65,9 +71,11 @@ abstract class Animal20 implements Ser20{
             System.out.println("----------------------");
         }
     };
-    public void comer(int massa){
+    public void comer(Animal20 b){
         if(this.vivo){
-            this.forca+=massa;
+            this.massa+=b.massa;
+            this.forca+=b.forca;
+            System.out.println(this.getClass().toGenericString()+ " esta comendo...");
         }else{
             System.out.println("----------------------");
             System.out.println(this.getClass().toGenericString() + " esta morto, nao pode comer");
@@ -75,11 +83,11 @@ abstract class Animal20 implements Ser20{
         }
     };
     public void info(){
-        System.out.printf("Tipo.........:%s%n ", getClass().toString());
+        System.out.printf("%n Tipo.........:%s%n ", getClass().toString());
         System.out.printf("Vivo.........:%s%n ", this.getVivo() ? "Sim" : "Nao");
         System.out.printf("Massa........:%d%n ", this.massa);
         System.out.printf("Velocidade...:%d%n ", this.velocidade);
         System.out.printf("Forca........:%d%n ", this.forca);
-        System.out.printf("-------------------------------");
+        System.out.printf("-------------------------------%n");
     };
 }

@@ -8,7 +8,7 @@ public class Vegetal20 {
         this.massa=massa;
     }
 
-    public setMassa(int massa){
+    public void setMassa(int massa){
         this.massa=massa;
     }
 
