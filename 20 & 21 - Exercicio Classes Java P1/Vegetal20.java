@@ -1,4 +1,4 @@
-public class Vegetal20 {
+public class Vegetal20 implements Ser20{
 
     private Boolean vivo;
     private int massa;

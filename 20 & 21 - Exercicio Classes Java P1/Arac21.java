@@ -8,6 +8,7 @@ public class Arac21 extends Animal20 {
     @Override
     public void ataque(Arac21 a){
         if(this.getVivo()){
+                System.out.println(this.getClass().toGenericString()+ " esta atacando...");
             if(this.getForca() <= a.getForca()){                
             }
             if((this.getForca() + this.veneno) > a.getForca()){

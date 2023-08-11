@@ -20,11 +20,13 @@ public class Aula20{
         Sapo.ataque(Formiga);  
         Sapo.info();
         Sapo.comer(Formiga);
-        Sapo.info();      
+        Sapo.info();     
         Aranha.ataque(Formiga);
         Aranha.info();
         Aranha.comer(Formiga);
         Aranha.info();
-        Alface.info();
+        Aranha.ataque(Sapo);
+        Aranha.info();
+        Aranha.ataque(Formiga);
     }
 }
