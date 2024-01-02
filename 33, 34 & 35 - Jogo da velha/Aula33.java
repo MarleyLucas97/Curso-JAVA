@@ -1,3 +1,6 @@
+//  Deus abençoe este código e quem vier a ler estas palávras. -Marley de Lucas, 02/01/2024.
+//  "Como a mão do SENHOR, o meu Deus, esteve sobre mim, tomei coragem..." -Esdras 7:28
+
 import java.util.Scanner;
 
 public class Aula33 {
@@ -8,6 +11,8 @@ public class Aula33 {
         Boolean game=true;
         String vitoria="";
         Scanner leia = new Scanner(System.in);
+
+        iniciarJogo(velha);
 
         while(game==true){
             desenhaJogo(velha);
@@ -57,7 +62,7 @@ public class Aula33 {
     }
 
     //metodo que verifica a jogada...
-    public /*void? */ Boolean verificarJogada(Campo[][] velha, int p[][], char simboloAtual){
+    public static Boolean verificarJogada(Campo[][] velha, int p[][], char simboloAtual){
         if(velha[p[0]][p[1]].getSimbolo()==' '){
             velha[p[0]][p[1]].setSimbolo(simboloAtual);
             return true;
@@ -65,6 +70,16 @@ public class Aula33 {
             return false;
         }
     }
+
+    //metodo para iniciar o Jogo...
+    public static void iniciarJogo(Campo[][] velha){
+        for(int l=0; l<3; l++){
+            for(int c=0;c<3;c++){
+                velha[l][c] = new Campo();
+            }
+        }
+    }
+
     //metodo que verifica a vitoria...
     public static String verificaVitoria(Campo[][] velha){
         return "";
