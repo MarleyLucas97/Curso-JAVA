@@ -11,11 +11,11 @@ public class Aula36 {
         ArrayList<String> carros = new ArrayList<>();
 
         numeros.add(11);
-        nuemros.add(22);
+        numeros.add(22);
         numeros.add(33);
 
         for(int e:numeros){
-            System.out.print(e);
+            System.out.println(e);
         }
     }
 }
