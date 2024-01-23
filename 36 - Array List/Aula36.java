@@ -1,5 +1,6 @@
 // "Confie no SENHOR de todo coração, não dependa do seu próprio entendimento." -Provérbios, 3 : 5
 // "Deus abençoe este codigo e quem vier a lê-lo." -Marley de Lucas, 22/01/2024 10:28
+package Aula36;
 
 import java.util.ArrayList;
 
